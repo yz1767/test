@@ -1,0 +1,109 @@
+
+
+<html>
+<head>
+
+<title>Test</title>
+<link href="test.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="supersized.css" type="text/css" media="screen">
+
+
+<script src="jquery.min.js"></script>
+
+<script src="supersized.3.2.6.min.js"></script>
+<script src="supersized.shutter.min.js"></script>
+<script>
+/***************************************************
+        SUPER SIZED
+***************************************************/
+jQuery.noConflict()(function ($) {
+    $.supersized({
+        // Functionality
+        slide_interval: 1500, // Length between transitions
+        transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+        transition_speed: 700, // Speed of transition
+        // Components                           
+        slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+        slides:
+        // Slideshow Images
+        [{
+            image: 'full1.jpg',
+           
+           
+            url: '#'
+        }, {
+            image: 'full2.jpg',
+          
+           
+            url: '#'
+        }, {
+            image: 'full3.jpg',
+         
+          
+            url: '#'
+        }]
+    });
+});
+</script>
+<script src="＃"></script>
+  <div class="header">
+   <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-3">
+        <h1>Take me to meal</h1>
+      </div>
+      <div class="col-5">
+      </div>
+      <div class="col-3">
+        <form action="#" method="post">
+        <fieldset>
+          <style = float:right;></style>
+          <legend>Site Search</legend>
+          <input type="text" value="Search"  onfocus="this.value=(this.value=='Search')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+    <div class="row nav">
+      <div class="col-2">
+      </div>
+      <div class="col-8 ">      
+        <ul>
+          <li><a href="test.html">Home</a></li>
+          <li><a href="slide.html">Today's Meal</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+  </div>
+
+
+
+</head>
+
+<body>
+    
+<style type="text/css">
+#show{width:200px;height:200px;line-height:200px;text-align:center;color:#000;font-size:64px;position:absolute;top:50%;left:45%;margin:-100px 0 0 -100px;}
+</style>
+<div id="show">
+  <h1>
+  Coming Soon...
+  </h1>
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>

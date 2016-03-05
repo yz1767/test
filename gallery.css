@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header{
+	display:block;
+	background:#7f0f7e;  
+
+}
+.header h1{
+	color:white;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+form, fieldset, legend{
+    margin:0; padding:0; border:none;
+}
+legend{
+    display:none;
+}
+input{
+    font-size:12px; 
+    font-family:Georgia, "Times New Roman", Times, serif;}
+#submit {
+    margin:0; 
+    padding:5px; 
+    color:#666666; 
+    background-color:#F7F7F7; 
+    border:1px solid #CCCCCC; 
+    cursor:pointer;
+}
+.header input{
+    display:block; 
+    float:left; 
+    width:155px; 
+    margin:0 5px 0 0; 
+    padding:5px; 
+    color:#B6B6B6; 
+    background-color:#151515; 
+    border:1px solid #666666; 
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    font-size:12px;
+}
+.header input#go{
+    width:68px; 
+    height:26px; 
+    margin:0; 
+    padding:4px 0; 
+    text-transform:uppercase; 
+    color:#BFE009; 
+    background-color:#2C2C2C; 
+    cursor:pointer; 
+    font-weight:bold;
+}
+
+/*-------------------------------------------------
+Nav
+-------------------------------------------------*/
+.nav{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.nav ul li{
+    float:left;
+}
+.nav ul li a{
+    width:150px;
+    height:30px;
+    border: 2px solid black;
+    background:white;
+    color:black;
+    margin:0px;
+    padding: 0px;
+    font-size:18px;
+    display:block;
+    text-align:center;
+}
+.nav ul li a:hover{
+    width:152px;    
+    height:30px;
+    border:3px solid #f2fafb;
+    color:#f2fafb;
+    background:#3c1354;
+}
+
+
+/*-------------------------------------------------
+-------------------------------------------------*/
