@@ -39,41 +39,6 @@ HEADER CLASSES
 }
 /*-------------------------------------------------
 Search
--------------------------------------------------
-form#search {
-    position: absolute;
-    top: 20px;
-    right: -22px;
-    width: 250px;
-    height: 50px;
-}
-
-form#search input#keyword {
-    color: #b8b2a9;
-    font-size: 14px;
-    width: 144px;
-    height: 30px;
-    margin: 10px 0px 5px 30px;
-    padding: 0px 30px 0px 5px;
-    border: 0;
- }
-    
- form#search input#go {
-    width: 68px;
-    height: 26px;
-    margin: 0;
-    padding: 4px;
-    text-transform: uppercase;
-    color: #7f0f7e;
-    background-color: #3c1354;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.clear {
-    clear: both;
-    height: 1px;
-}
 -------------------------------------------------*/
 form, fieldset, legend{
     margin:0; padding:0; border:none;
@@ -129,57 +94,105 @@ Nav
 	float:left;
 }
 .nav ul li a{
-	width:150px;
+	width:130px;
 	height:30px;
-	border: 2px solid black;
-	background:white;
-	color:black;
+	border: 2px solid #f2fafb;
+	background:#3c1354;
+	color:#f2fafb;
 	margin:0px;
 	padding: 0px;
 	font-size:18px;
 	display:block;
 	text-align:center;
+    text-decoration: none;
 }
 .nav ul li a:hover{
-	width:152px;	
+	width:132px;	
 	height:30px;
-	border:3px solid #f2fafb;
-	color:#f2fafb;
-	background:#3c1354;
+	border:3px solid white;
+	color:#BFE009;
+	background:#bc9fd6;
+    text-decoration: none;
 }
 
 /*-------------------------------------------------
 Tabily
--------------------------------------------------*/
-.menu_tab {
-    padding: 0;   
-}
-.menu_tab li {
-    display: inline;
-}
-.menu_tab li.active a {
-    background: #f5f5f5;
-    color: #3c1354;
-}
-.menu_tab li a {
-    background: #3c1354;
-    padding: 5px 10px;
-    float: left;
-    border-right: 1px solid #f5f5f5;
-    border-bottom: none;
-    color: #f2fafb;
-    font-weight: normal;
-}
 
-.tab_content {
-    float: left;
-    clear: both;
-    border-top: none;
-    border-left: none;
-    background: #f5f5f5;
-    padding: 4%;
-    width: 92%;
-}
+-------------------------------------------------*/
+ .tabs input[type=radio] {
+              position: absolute;
+              top: -9999px;
+              left: -9999px;
+          }
+          .tabs {
+            width: 100%;
+            list-style: none;
+            position: relative;
+            padding: 0;
+            margin: 1px auto;
+          }
+          .tabs li{
+            float: left;
+            display: inline;
+          }
+          .tabs label {
+              display: block;
+              padding: 5px 10px;
+              border-right: 3px solid #BFE009;
+              border-bottom: none;
+              color: #f2fafb;
+              font-weight: normal;
+              background: #3c1354;
+              cursor: pointer;
+              position: relative;
+              top: 2px;
+              bottom: 3px;
+
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+          }
+          .tabs label:hover {
+            background: #f2fafb;
+            top: 0;
+            color: #BFE009;
+          }
+          
+          [id^=tab]:checked + label {
+            background: #f5f5f5;
+            color: #3c1354;
+            top: 0;
+          }
+          
+          [id^=tab]:checked ~ [id^=tab-content], [id^=tab]:checked ~ [id^=tab-content] > div {
+              display: block;
+          }
+          .tab-content{
+            z-index: 2;
+            display: none;
+            text-align: left;
+            overflow: hidden;
+            width: 92%;
+            background: #f5f5f5;
+            padding: 0px 5px 5px 5px;
+            color: #3c1354;
+            position: absolute;
+            top: 27px;
+            left: 0;
+            box-sizing: border-box;
+
+          }
+          .tab-content > div{
+            display: none;
+            -webkit-animation-duration: 0.5s;
+            -o-animation-duration: 0.5s;
+            -moz-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+          }
+
+
+
 
 .tab_article {
     margin: 20px 0;
@@ -191,14 +204,15 @@ Tabily
     width: 80px;
     height: 80px;
     margin-right: 10px;
+    border: 3px solid #f2fafb;
 }
 
 .tab_article p {
     overflow: hidden;
-    padding: 0;
+    padding: 5px;
     font-size: 14px;
 }
-
+      
 /*-------------------------------------------------
 Slide Image
 -------------------------------------------------*/
